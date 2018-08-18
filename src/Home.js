@@ -17,6 +17,7 @@ class Home extends Component{
      src="/MgCho_Retro.mp4">
      <ControlBar autoHide={false} />
      </Player>
+     <p> By Shwe Yee Aung </p>
     </div>
 
     );
