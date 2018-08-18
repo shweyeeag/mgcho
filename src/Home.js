@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {withRouter} from "react-router-dom";
+import {Player} from "video-react";
 
 class Home extends Component{
 	constructor(props){
@@ -8,7 +9,14 @@ class Home extends Component{
 
 	render() {
 
-		return(<div> <p> Welcome to Heroku Hello World! </p> </div>);
+		return(
+    <Player
+      playsInline
+     src="/MgCho_Retro.mp4"
+    />
+
+    );
+
 	}
 }
 export default withRouter(Home);
