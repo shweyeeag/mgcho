@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {withRouter} from "react-router-dom";
-import {Player} from "video-react";
+import './App.css';
+import {Player, ControlBar} from "video-react";
 
 class Home extends Component{
 	constructor(props){
@@ -10,10 +11,13 @@ class Home extends Component{
 	render() {
 
 		return(
+			<div className="player">
     <Player
       playsInline
-     src="/MgCho_Retro.mp4"
-    />
+     src="/MgCho_Retro.mp4">
+     <ControlBar autoHide={false} />
+     </Player>
+    </div>
 
     );
 
